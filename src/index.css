@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Button {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  color:#ffc72c !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  
+  
+ 
+}
+
+Button:hover {
+  background-color: #ffc72c !important;
+  color: #ffff !important;
+}
+
+.main_note {
+  width: 500px;
+  padding: 15px 10px 5px 10px;
+  margin: 20px auto;
+}
+
+.plus_sign {
+
+}
+
+form {
+  min-height: 50px;
+  color: #ecf0f1;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+
+.deleteIcon {
+  width: 0.7em;
+  height: 0.7em;
+}
+
+.note {
+  background: #ffff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.header {
+  width: 100%;
+ line-height: 100px;
+  background-color: #ffc72c;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 50px;
+  box-shadow: 5px 3px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  width: 100%;
+ 
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+
+
