@@ -6,7 +6,7 @@ import Note from './Note';
 
 
 const App = () => {
-const [addItem, setAddItem] = useState([]);
+  const [addItem, setAddItem] = useState([]);
   const addNote = (note) => {
     //alert('I am clicked');
     setAddItem((preData) => {
@@ -14,28 +14,30 @@ const [addItem, setAddItem] = useState([]);
     });
   };
   const onDelete = (id) => {
-    setAddItem((olddata)=>{
-      olddata.filter()
-    });
+    setAddItem((olddata) => 
+      olddata.filter((currdata, indx) => {
+        return indx !== id;
+      })
+    );
   };
-  return(
+  return (
     <>
-    <Header />
-    <CreateNote passNote = {addNote} />
-    
+      <Header />
+      <CreateNote passNote={addNote} />
 
-    {addItem.map((val, index)=>{
-      return <Note
-        key={index}
-        id={index}
-        title={val.title}
-        content={val.content}
-        deleteItem = {onDelete}
-      
-      />
-    })
-}
-    <Footer />
+
+      {addItem.map((val, index) => {
+        return <Note
+          key={index}
+          id={index}
+          title={val.title}
+          content={val.content}
+          deleteItem={onDelete}
+
+        />
+      })
+      }
+      <Footer />
     </>
   );
 };
